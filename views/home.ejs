@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <title><%=title%></title>
+    <!-- D:\Todo-Backend\assets\home.css -->
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="main">
+        <div class="child-one"><h1><i>TODO App</i></h1></div>
+        
+        <!-- <div>
+            
+                <ul>
+                    <%for(let i of todos){%>
+                        <li>
+                            <div>
+                            <%=i.name%><br>
+                            <%=i.date%>
+                            </div>
+                        </li>
+                        <%}%>
+                </ul>
+        </div> -->
+        <div class="child-two inputs">
+            <form action="/create-todo" method="POST">
+            <div class="ct-inp-one">
+                <div id="labelO" class="divA"><p>DESCRIPTION</p></div>
+                <div id="O-inp" class="divB"><input  type="text" name="name" required placeholder="Type here"></div>
+            </div>
+            <div class="ct-inp-two">
+                <div class="select">
+                    <div class="category">CATEGORY</div>
+                <select id="options" required name="category" placeholder="choose-category">
+                    <option value="Personal" class="ops">Personal</option>
+                    <option value="School" class="ops">School</option>
+                    <option value="Work" class="ops" >Work</option>
+                    <option value="Cleaning" class="ops">Cleaning</option>
+                    <option value="Other" class="ops">Other</option>
+                  </select>
+                </div>
+            <div class="date">
+                <div class="due-date">DUE-DATE</div>
+                  <input id="option" type="date" name="date" required placeholder="select date" required></div>
+            </div>
+                <div class="ct-inp-three">
+                    <button class="buttonA" id="btns" name="Add"><i class="fa-solid fa-plus"></i>&emsp;Add Todo</button>
+                </div>
+        </form>
+        <form action="/delete-todos" method="POST">
+            <div class="ct-inp-four">
+                <div class="ctif-child">
+                <button   class="buttonB" name="Delete"><i class="fa-solid fa-trash"></i>&emsp;Delete Tasks</button>
+            </div>
+            </div>
+        </form>
+        
+
+        </div>
+        <div class="child-three">
+            <ul>
+                <%for(let i of todos){%>
+                    <li>
+                        <div class="todo-list">
+                            <div class="todo-o">
+                                 <input type="checkbox" id="name" class="checkboxs" name="name" value="done" >
+                            <label for="name" id="names"><%=i.name%><br> <%=i.date%></label></a><br>
+                        </div>
+                        <div class="todo-t">
+                         <button class="cat-btn news" > <a href="/get-id/?id=<%= i._id %>" id="anchor"  >Done</a></button>
+                       <button class="cat-btn" id="button-element"><%=i.category%></button> 
+                    </div>
+                       
+                        </div>
+                    </li>
+                    <%}%>
+            </ul>
+        </div>
+
+    </div>
+    <div class="scrolling-text">
+        <span>You have to press done button after checking a box to conform.</span>
+      </div>
+    <script src="https://kit.fontawesome.com/a516fd4d33.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../assets/home.js"></script>
+</body>
+</html>

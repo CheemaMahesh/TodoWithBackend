@@ -1,0 +1,267 @@
+body{
+    /* background-color: rgb(26, 191, 241); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.main{
+  background-color:aliceblue;
+  /* border: 2px solid black; */
+  /* background-color: rgb(26, 191, 241); */
+
+  border-radius: 1rem;
+}
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+  .child-one{
+    border-radius: 1rem;
+
+    height:50px;
+    width:500px;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+  }
+  .child-two{
+    height:250px;
+    width:500px;
+    /* background-color: blanchedalmond; */
+    /* background-color: red; */
+  }
+  .child-three{
+      /* height:1000px; */
+      width:500px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(26, 191, 241);
+
+  }
+  .todo-list{
+    height:80px;
+    width:500px;
+    display: flex;
+      flex-direction: row;
+      align-items: center;
+    /* background-color: green; */
+    border: 2px solid red;
+  }
+  .ct-inp-one{
+    height:100px;
+    width:500px;
+    /* background-color: green; */
+    overflow:hidden;
+  }
+  .ct-inp-two{
+    height:50px;
+    width:500px;
+    /* background-color: rgb(162, 201, 6); */
+    overflow:hidden;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .ct-inp-three{
+    height:100px;
+    width:250px;
+    
+    /* background-color: rgb(212, 96, 18); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .ct-inp-four{
+    height:100px;
+    width:500px;
+    /* background-color: rgb(73, 212, 18); */
+    display: flex;
+    /* background-color: rgb(26, 191, 241); */
+    flex-direction: row-reverse;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .ctif-child{
+    height:100px;
+    width:50%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .select{
+    height:50px;
+    width:250px;
+    /* border: 1px solid black; */
+  }
+  .date{
+    height:50px;
+    width:250px;
+    /* border: 1px solid black; */
+
+  }
+  .category{
+    height:20px;
+    width:250px;
+  }
+  .due-date{
+    height:20px;
+    width:100%;
+  }
+  #options{
+    height:30px;
+    width:100%;
+  }
+  #option{
+    height:30px;
+    width:100%;
+  }
+
+  
+  .divA{
+    height:30px;
+    width:100%;
+    /* padding-left: 20px; */
+    /* padding-top: 10px; */
+  }
+  .divA p{
+    height:32px;
+    /* margin-left: 20px; */
+    /* margin-top: 10px; */
+    /* :10px; */
+
+  }
+  .divB{
+    height:60px;
+    width:100%;
+  }
+  #O-inp input{
+    height:100%;
+    width:100% ;
+    /* outline: 0px solid transparent; */
+    font-size: 2rem;
+  }
+
+  
+  
+  
+
+  .buttonA{
+    height:50px;
+    width:50%;
+    background-color: green;
+    /* border-radius: 3rem; */
+    font-weight: bold;
+  }
+  .buttonB{
+    height:50px;
+    width:50%;
+    background-color: rgb(245, 13, 13);
+    /* border-radius: 3rem; */
+    margin-top: -200px;
+    font-weight: bold;
+    /* margin-left: -75px; */
+  }
+
+
+  /* .child-three{
+    height:200px;
+    width:500px;
+   
+    background-color: gainsboro;
+  } */
+
+  .todo-o{
+    width:60%;
+    
+    font-size: 1.3rem;
+  }
+
+
+  .todo-t{
+    width:40%;
+    display: flex;
+    flex-direction: colume;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .cat-btn{
+    height:30px;
+    width:80px;
+    /* background-color: rgb(26, 191, 241); */
+    /* background-color: rgb(26, 191, 241); */
+
+  }
+
+
+  input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color:blue;
+  }
+
+  
+
+
+
+  a {
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+    display: flex;
+    flex-direction: colume;
+    align-items: center;
+    font-weight: bold;
+    width:100%;
+  }
+  a:hover{
+    color:black;
+  }
+  #names{
+    color:balck;
+  }
+
+
+
+
+
+  .scrolling-text {
+    height: 500px; /* Adjust the height as needed */
+    /* overflow: hidden; */
+    position: relative;
+  }
+  
+  .scrolling-text span {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    display: block;
+    animation: scrolling 5s linear infinite; /* Adjust the animation duration as needed */
+    margin-left: 100px;
+    margin-top: 100px;
+    color:red;
+    font-weight: bold;
+    font-family: cursive;
+  }
+  
+  @keyframes scrolling {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+
+  .news{
+    background-color: green;
+  }
